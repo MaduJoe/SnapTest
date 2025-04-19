@@ -26,7 +26,7 @@
                                  |         |
                                  |         |
 [테스트 케이스 저장소] <------->  |         | <--------> [데이터베이스 (SQLite)]
-   (cases/*.json)                |         |                (tossify.db)
+   (cases/*.json)                |         |                (snaptest.db)
                                  |         |
                                  v         v
                             [테스트 실행 엔진]
@@ -52,13 +52,13 @@
 ## 📁 프로젝트 구조
 
 ```
-tossify-qa/
+SnapTest/
 ├── app.py                  # 메인 Flask 애플리케이션 (웹 서버 및 라우팅)
 ├── db.py                   # 데이터베이스 연결 및 조작 함수
 ├── runner.py               # 테스트 케이스 실행 핵심 로직
 ├── background_worker.py    # 백그라운드 테스트 실행 및 스케줄링
 ├── utils.py                # 유틸리티 함수
-├── tossify.db              # SQLite 데이터베이스
+├── snaptest.db             # SQLite 데이터베이스
 ├── cases/                  # 테스트 케이스 (JSON 형식)
 ├── reports/                # 테스트 실행 결과 리포트
 ├── tests/                  # 테스트 로직 및 함수
@@ -128,8 +128,8 @@ tossify-qa/
 ### 설치 및 실행
 ```bash
 # 저장소 복제
-git clone https://github.com/yourusername/tossify-qa.git
-cd tossify-qa
+git clone https://github.com/yourusername/snaptest-qa.git
+cd SnapTest
 
 # 의존성 설치
 pip install -r requirements.txt
