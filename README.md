@@ -128,7 +128,7 @@ SnapTest/
 ### 설치 및 실행
 ```bash
 # 저장소 복제
-git clone https://github.com/yourusername/snaptest-qa.git
+git clone https://github.com/yourusername/snaptest.git
 cd SnapTest
 
 # 의존성 설치
